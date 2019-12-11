@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Removing Old Theme"
+rm -rf /home/panel/html/assets
+rm -rf /home/panel/html/view
+rm -rf /home/panel/html/tmp/*
+echo "Installing rexthemes Themes"
+cd ~
+mkdir Sleak
+cd Sleak
+rm -rf *
+wget https://www.mediafire.com/file/rz12i5y0dyubl0z/rextheme.tgz/file && tar zxvf rextheme.tgz/file
+mv assets /home/panel/html
+mv view /home/panel/html
+echo "Enjoy using rextheme themes"
